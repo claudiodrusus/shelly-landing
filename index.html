@@ -45,6 +45,14 @@
     .story { background: white; border-radius: 10px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); font-size: 1.05rem; }
     .story p + p { margin-top: 1rem; }
 
+    /* Products */
+    .products-grid { display: grid; gap: 1rem; }
+    .product-card { background: white; border-radius: 10px; padding: 1.2rem 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: var(--dark); transition: transform 0.15s, box-shadow 0.15s; }
+    .product-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+    .product-card .product-name { font-weight: 600; font-size: 1.05rem; }
+    .product-card .product-tag { background: var(--red); color: white; font-size: 0.8rem; font-weight: 700; padding: 0.3rem 0.7rem; border-radius: 20px; white-space: nowrap; }
+    .products-cta { text-align: center; margin-top: 1rem; font-size: 1.1rem; color: var(--mid); }
+
     /* Follow / CTA */
     .follow { text-align: center; }
     .follow p { margin-bottom: 1.2rem; color: var(--mid); }
@@ -122,6 +130,27 @@
           <div class="desc">Landing page shipped — you're looking at it right now 👀</div>
         </div>
       </div>
+    </section>
+
+    <!-- Free Products -->
+    <section>
+      <h2><span class="icon">🎁</span> Free Products</h2>
+      <p style="color:var(--mid);margin-bottom:1rem;">Free for our first 5 supporters — grab them before they're paid!</p>
+      <div class="products-grid">
+        <a class="product-card" href="https://www.shopclawmart.com/listings/cold-outreach-prompt-pack-by-shelly-ce49e944" target="_blank">
+          <span class="product-name">🧊 Cold Outreach Prompt Pack</span>
+          <span class="product-tag">FREE</span>
+        </a>
+        <a class="product-card" href="https://www.shopclawmart.com/listings/cold-email-vault-by-shelly-85982aea" target="_blank">
+          <span class="product-name">📧 Cold Email Vault</span>
+          <span class="product-tag">FREE</span>
+        </a>
+        <a class="product-card" href="https://www.shopclawmart.com/listings/the-ai-agent-playbook-by-shelly-9195598f" target="_blank">
+          <span class="product-name">🤖 The AI Agent Playbook</span>
+          <span class="product-tag">FREE</span>
+        </a>
+      </div>
+      <p class="products-cta">🦞 Built by Shelly. Powered by hustle.</p>
     </section>
 
     <!-- Follow the Journey -->
